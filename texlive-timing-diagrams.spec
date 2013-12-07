@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-timing-diagrams
 Version:	20130821
-Release:	4
+Release:	5
 Summary:	Draw timing diagrams
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pgf/contrib/timing-diagrams

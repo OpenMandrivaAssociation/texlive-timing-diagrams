@@ -1,18 +1,12 @@
-# revision 31491
-# category Package
-# catalog-ctan /graphics/pgf/contrib/timing-diagrams
-# catalog-date 2013-08-21 17:26:35 +0200
-# catalog-license lppl1.3
-# catalog-version undef
 Name:		texlive-timing-diagrams
-Version:	20180303
-Release:	2
+Version:	31491
+Release:	1
 Summary:	Draw timing diagrams
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pgf/contrib/timing-diagrams
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/timing-diagrams.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/timing-diagrams.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/timing-diagrams.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/timing-diagrams.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -24,12 +18,12 @@ kinds of timing diagrams, using Tikz. Documentation is sparse,
 but the source and the examples file should be of some use.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -42,7 +36,7 @@ but the source and the examples file should be of some use.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 

@@ -1,6 +1,6 @@
 Name:		texlive-timing-diagrams
 Version:	31491
-Release:	1
+Release:	2
 Summary:	Draw timing diagrams
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pgf/contrib/timing-diagrams

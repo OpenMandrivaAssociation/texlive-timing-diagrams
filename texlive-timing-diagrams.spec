@@ -3,7 +3,7 @@ Version:	31491
 Release:	2
 Summary:	Draw timing diagrams
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/graphics/pgf/contrib/timing-diagrams
+URL:		https://www.ctan.org/tex-archive/graphics/pgf/contrib/timing-diagrams
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/timing-diagrams.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/timing-diagrams.doc.r%{version}.tar.xz
